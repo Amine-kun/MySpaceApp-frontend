@@ -6,7 +6,7 @@ import {HiMail} from 'react-icons/hi';
 
 const LandingPage =()=> {
 
-    const useNavigate = navigate();
+    const navigate = useNavigate();
 
   return (
     <div className="flex flex-col h-screen ">
