@@ -30,7 +30,7 @@ const Sidebar =({user ,closeToggle})=> {
           to="/"
           className="flex px-5 gap-2 my-6 pt-1 w-190 items-center"
           onClick={closeSidebar}>
-              <img src="%PUBLIC_URL%/myspace.png" alt="logo" className="w-10 "/>
+              <img src="myspace.png" alt="logo" className="w-10 "/>
               <p className="self-start text-1xl text-blue-500 mt-1"><b>MySpace.</b></p>
           </Link>
           <div className="flex flex-col gap-5">

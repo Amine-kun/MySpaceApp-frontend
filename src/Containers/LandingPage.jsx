@@ -17,7 +17,7 @@ const LandingPage =()=> {
               to="/welcome"
               className="flex px-5 pl-9 gap-2 my-9 pt-1 w-190 items-center"
               >
-                  <img src="%PUBLIC_URL%/myspace.png" alt="logo" className="w-10 "/>
+                  <img src="myspace.png" alt="logo" className="w-10 "/>
                   <p
                    className="self-start text-1xl mt-2 text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-700 cursor-pointer" 
                    onClick={navigate("/welcome")}
