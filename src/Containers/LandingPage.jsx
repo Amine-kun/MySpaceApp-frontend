@@ -46,11 +46,10 @@ const LandingPage =()=> {
                       className="px-5 py-3 w-full outline-none"
                       type="text"
                       placeholder="Enter your Email for suggestions."
-                      onClick={()=> navigate(`/login`)}
                       />
                        <HiMail fontSize={21} className="mr-2 w-10"/>
               </div>
-                <BsFillArrowRightCircleFill className="self-center text-gray-50 h-9 w-9 cursor-pointer hover:text-blue-700 animate-bounce lg:text-blue-500"/>
+                <BsFillArrowRightCircleFill className="self-center text-gray-50 h-9 w-9 cursor-pointer hover:text-blue-700 animate-bounce lg:text-blue-500" onClick={()=> navigate(`/login`)}/>
               <div className="flex flex-row gap-2 text-gray-50 lg:text-blue-500 lg:hidden">
                 <FaFacebookSquare className="w-8 h-8 cursor-pointer hover:text-blue-700"/>
                 <FaInstagramSquare className="w-8 h-8 cursor-pointer hover:text-blue-700"/>
