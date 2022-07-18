@@ -31,7 +31,7 @@ const Login =()=> {
   return (
     <div className="flex flex-col h-screen">
         <div className="bg-gray-50 flex flex-row items-center gap-28">
-                    <p className="self-start ml-10 text-2xl text-blue-500 mb-10"><b>MySpace</b><span className="text-8xl">.</span></p>
+                    <p className="self-start ml-10 text-2xl text-blue-500 mb-10 cursor-pointer" onClick={()=> navigate(`/welcome`)}><b>MySpace</b><span className="text-8xl">.</span></p>
                     <Link
                         to="/welcome"
                         className="flex px-5 mt-2 mx-10  text-gray-50 font-bold items-center ml-auto bg-gradient-to-r from-cyan-500 to-blue-700 rounded-md"

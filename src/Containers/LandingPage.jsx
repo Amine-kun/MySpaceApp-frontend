@@ -19,11 +19,8 @@ const LandingPage =()=> {
               >
                   <img src="myspace.png" alt="logo" className="w-10 "/>
                   <p
-                   className="self-start text-1xl mt-2 text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-700 cursor-pointer" 
-                   onClick={navigate("/welcome")}
-                   >
+                   className="self-start text-1xl mt-2 text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-700 cursor-pointer"  >
                      <b>MySpace.</b>
-
                   </p>
               </Link>
                        <p className=" hidden lg:flex font-semibold text-gray-50 px-4  my-9 pt-2 pb-2 w-160 self-end ml-auto cursor-pointer bg-gradient-to-r from-cyan-500 to-blue-600 text-center rounded-md hover:shadow-lg " >Who we are?</p>
@@ -49,7 +46,7 @@ const LandingPage =()=> {
                       className="px-5 py-3 w-full outline-none"
                       type="text"
                       placeholder="Enter your Email for suggestions."
-                      onClick={navigate("/login")}
+                      onClick={()=> navigate(`/login`)}
                       />
                        <HiMail fontSize={21} className="mr-2 w-10"/>
               </div>
