@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  media: false, // or 'media' or 'class'
   theme: {
     extend: {
       margin: {
@@ -32,7 +32,7 @@ module.exports = {
         0.7: '0.7 1 0%',
       },
       gap:{
-        28: '4.5rem'
+        28: '4.5rem',
       },
       maxHeight: {
         370: '370px',
