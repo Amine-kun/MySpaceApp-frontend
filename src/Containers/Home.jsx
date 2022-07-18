@@ -39,7 +39,7 @@ const Home =()=> {
              <HiMenu fontSize={40} className="cursor-pointer"
             onClick={()=>setToggleSidebar(true)}/>
           <Link to='/' className="flex flex-row items-center"> 
-              <img src="http://localhost:3000/myspace-white.png" alt="logo" className="w-10 mr-1 "/>
+              <img src="%PUBLIC_URL%/myspace-white.png" alt="logo" className="w-10 mr-1 "/>
               <p className="self-start text-gray-50 text-1xl mt-1"><b>MySpace.</b></p>
           </Link>
           <Link to={`user-profile/${user?._id}`} className="flex flex-row items-center"> 

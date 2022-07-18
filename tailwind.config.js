@@ -31,6 +31,9 @@ module.exports = {
       flex: {
         0.7: '0.7 1 0%',
       },
+      gap:{
+        28: '4.5rem'
+      },
       maxHeight: {
         370: '370px',
       },

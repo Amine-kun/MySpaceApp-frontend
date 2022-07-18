@@ -1,21 +1,30 @@
 import React from 'react';
-import {NavLink, Link} from 'react-router-dom';
+import {NavLink, Link, useNavigate} from 'react-router-dom';
 import {BsFillArrowRightCircleFill} from 'react-icons/bs';
 import {FaGithubSquare, FaFacebookSquare, FaInstagramSquare, FaLinkedin} from 'react-icons/fa'
 import {HiMail} from 'react-icons/hi';
 
 const LandingPage =()=> {
+
+    const useNavigate = navigate();
+
   return (
     <div className="flex flex-col h-screen ">
       <div className="flex flex-col h-full lg:flex-row ">
           <div className="flex flex-col bg-gray-50 lg:w-2/5 lg:pl-8 h-full lg:pr-2">  
-            <div className="flex flex-row pr-10 lg:pr-4">
+            <div className="flex flex-row lg:pr-4">
               <Link
               to="/welcome"
               className="flex px-5 pl-9 gap-2 my-9 pt-1 w-190 items-center"
               >
-                  <img src="http://localhost:3000/myspace.png" alt="logo" className="w-10 "/>
-                  <p className="self-start text-1xl mt-2 text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-700"><b>MySpace.</b></p>
+                  <img src="%PUBLIC_URL%/myspace.png" alt="logo" className="w-10 "/>
+                  <p
+                   className="self-start text-1xl mt-2 text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-700 cursor-pointer" 
+                   onClick={navigate("/welcome")}
+                   >
+                     <b>MySpace.</b>
+
+                  </p>
               </Link>
                        <p className=" hidden lg:flex font-semibold text-gray-50 px-4  my-9 pt-2 pb-2 w-160 self-end ml-auto cursor-pointer bg-gradient-to-r from-cyan-500 to-blue-600 text-center rounded-md hover:shadow-lg " >Who we are?</p>
                        <Link
@@ -40,6 +49,7 @@ const LandingPage =()=> {
                       className="px-5 py-3 w-full outline-none"
                       type="text"
                       placeholder="Enter your Email for suggestions."
+                      onClick={navigate("/login")}
                       />
                        <HiMail fontSize={21} className="mr-2 w-10"/>
               </div>
