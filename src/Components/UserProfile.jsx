@@ -110,20 +110,24 @@ const UserProfile =()=> {
           </div>
           <div className="px-2 ">
             { pins 
-                  ?<div className="flex flex-col gap-5">
-                      <Link to='/create-pin' className="self-center bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full w-12 h-12 flex justify-center items-center font-bold">
-                                  +
-                      </Link>
-                      <MSL pins={pins}/>
-                   </div>
+                  ? <div className="flex flex-col gap-5">
+                        {userId === user._id && (
+                            <Link to='/create-pin' className="self-center bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full w-12 h-12 flex justify-center items-center font-bold">
+                                                              +
+                            </Link>
+                          )}
+                        <MSL pins={pins}/>
+                     </div>
                   
-                  :<div className="flex flex-col gap-4 justify-center items-center bg-white py-10 rounded-lg ">
-                             <p className="text-gray-500 font-bold">You have no Posts yet.</p>
-                              <Link to='/create-pin' className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full w-12 h-12 flex justify-center items-center font-bold">
-                                  +
-                              </Link>
-                              <p className="text-gray-500 font-bold">Create one now, if you'd like :D!</p>
-                   </div>}
+                  : <div className="flex flex-col gap-4 justify-center items-center bg-white py-10 rounded-lg ">
+                               <p className="text-gray-500 font-bold">You have no Posts yet.</p>
+                        {userId === user._id && (
+                            <Link to='/create-pin' className="self-center bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full w-12 h-12 flex justify-center items-center font-bold">
+                                                              +
+                            </Link>
+                          )}
+                                <p className="text-gray-500 font-bold">Create one now, if you'd like :D!</p>
+                     </div>}
           </div>
         </div>
       </div>
